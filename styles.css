@@ -131,23 +131,7 @@ hr{
 }
 
 
-.projects{
-    /* height: 100vh; */
-    background-color:#091F3B;
-    /* background-image: url("background7.png"); */
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    
-}
-.projects h2{
-    text-align: left;
-    padding-top: 2rem;
-    margin-left: 4rem;
-    color: azure;
-    font-size: 35px;
-    border-bottom: 1px solid azure;
-    width: 45%;
-}
+
 
 .about{
     background-color: #051937;
@@ -232,38 +216,66 @@ hr{
     justify-content: center;
    
 }
-
-#projects-content-area{
+.projects{
+    /* height: 100vh; */
+    background-color:#091F3B;
+    /* background-image: url("background7.png"); */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
-#image-area{
+.projects h2{
+    text-align: left;
+    padding-top: 2rem;
+    margin-left: 4rem;
+    color: azure;
+    font-size: 35px;
+    border-bottom: 1px solid azure;
+    width: 45%;
+}
+
+.slider-wrapper{
+    overflow: hidden;
+    width: 50%;
+    border: 1px solid white;
+}
+.image-area{
     /* margin-left: auto;
     margin-right: auto; */
-    max-width: 100%;
-    min-width: 600px;
+    /* max-width: 100%;
+    min-width: 200px; */
+    text-align: center;
+    border: 1px solid red;
+    /* width: 45rem; */ 
+    display: flex;
+    width: 100%;
+    
     
    
 }
-#image-area img{
+.image-area img, video{
     padding: 0;
     margin: 0;
     text-align: center;
-    max-width: 100%;
-    min-width: 600px;
-    margin-left: auto;
-   
+    /* width: 100%; */
+    /* height: 25rem; */
+    /* min-width: 200px;  */
+    /* margin-left: auto; */
+    /* display: block; */ 
+    aspect-ratio: 14/4;
 }
+
 #description-area{
+    /* border: 1px solid cyan; */
     font-size: 18px;
     width:fit-content;
     color: azure;
     align-items: center;
     justify-content: center;
     max-width: 40%;
-    margin-right: 4rem;
-   
+    min-width: 400px;
     line-height: 30px;
     text-align: center;
     
@@ -301,7 +313,7 @@ hr{
     margin:auto;
 }
 
-#prev-next-bttns{
+.prev-next-bttns{
     color: azure;
     background-color: transparent;
     width: 5rem;
@@ -310,7 +322,7 @@ hr{
     border-radius: 50%;
     cursor: pointer;
 }
-#project-nav-btns{
+.project-nav-btns{
     justify-content: space-around;
     display: flex;
     list-style: none;
