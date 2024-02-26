@@ -1,0 +1,140 @@
+.projects-section{
+  background-color: #d9c2f3;
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 2.75em;
+  padding-bottom: 2.75em;
+  color: #231D2A;
+  /* justify-content: center; */
+  
+}
+#section-title{
+  margin-left: 2em;
+  margin-bottom: 1em;;
+  font-size: 2em;
+}
+
+.projects-content-area{
+  border-radius: 10px;
+  padding: .5em 2em .5em 2em;
+  margin: 1em 3em 1em 3em;
+  background-color: #d9c2f3;
+  
+
+}
+.carousel{
+  padding: 1.5em;
+  border-radius: 15px;
+  column-gap: 2.5em;
+  display: flex;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  /* border: 1px solid red; */
+  /* background-color: #d9c2f3; */
+  /* padding: 3em 2em 3em 2em; */
+  /* margin: 0 2em 0 2em; */
+  /* grid-template-columns: 45vw 45vw; */
+  /* columns: 2; */
+  /* justify-content: space-around; */
+  /* justify-content: center; */
+
+}
+
+.project-card{
+  /* display: block; */
+  /* width: 30vw; */
+  cursor: pointer;
+  position: relative;
+  background-color: #F5ECFF;
+  min-width: 25vw;
+  padding: 1.5em 1em .5em 1em;
+  /* margin: 2.5em; */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+  border-radius: 20px;
+  /* border: 3px solid #333036; */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow-x: scroll;
+  transform-style: preserve-3d;
+  transition: transform 2s, box-shadow 0.3s ease;
+ 
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0,0,0, .3);
+  /* animation: pulse 1s infinite; */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.project-card h2{
+  /* display: block; */
+  font-size: 2vw;
+  padding-bottom: .5em;
+}
+
+.project-card img{
+  position: relative;
+  /* display: block; */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.tech-stack{
+  padding-top: .5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+
+
+.tech-stack-list{
+  /* display: flex; */
+  display: flex;
+  text-align: center;
+  column-gap: 1em;
+ 
+  /* padding: .5em 0 .5em 0; */
+  
+}
+
+.tech-stack-list li img{
+  width: 2.75vw;
+
+}
+
+.nav-buttons{
+  width: 2vw;
+  cursor: pointer;
+  height: 2vw;
+  border-radius: 50%;
+  border: none;
+  background-color: #F5ECFF;
+}
+
+.button-container{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2em;
+  column-gap: .5em;
+
+}
