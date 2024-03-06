@@ -1,0 +1,64 @@
+.message-form-container{
+    width: 55%;
+}
+
+input, textarea{
+    resize: none;
+    display: flex;
+    /* background-color: transparent; */
+    width: 95%;
+    height: 1.5em;
+    border-radius: 10px;
+    padding: 0.5em;
+    font-size: 18px;
+    border: 1px solid white;
+    margin-bottom: 2em;
+    transition: border 0.5s ease;
+}
+
+textarea:focus{
+    outline: 2px solid #231D2A;
+}
+input:focus{
+    outline: 2px solid #231D2A;
+}
+textarea:hover{
+    border: 1px solid #231D2A;
+}
+input:hover{
+    border: 1px solid #231D2A;
+}
+
+textArea{
+    height: fit-content;
+    margin: 0;
+}
+
+#submit-bttn{
+    margin-top: 1em;
+    width: 7em;
+    height: 3em;
+    border-radius: 20px;
+    cursor: pointer;
+    /* transition: background-color .5s ease-out;
+    transition: color .5s ease-in; */
+    transition: all .5s ease;
+
+}
+
+@media (max-width: 768px) {
+    #submit-bttn{
+      background-color: #A67CE4;
+      color: #1C1E28;
+      transition: none;
+      border: none;
+    }
+    #submit-bttn:hover{
+      animation: none;
+      border: none;
+      
+    }
+    .message-form-container{
+      width: 85%;
+    }
+  }

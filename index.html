@@ -4,45 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The professional portfolio of Noah Saenz.">
+    <meta name="author" content="Noah Saenz">
+    <link rel="icon" type="image/svg+xml" href="icons/n-solid.svg">
     <title>Noah Saenz - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/css/styles.css">
-    <link rel="stylesheet" href="styles/css/landing-styles.css">
-    <link rel="stylesheet" href="styles/css/about-styles.css">
-    <link rel="stylesheet" href="styles/css/projects-styles.css">
-    <link rel="stylesheet" href="styles/css/contact-styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/landing-styles/landing-styles.css">
+    <link rel="stylesheet" href="styles/landing-styles/header.css">
+    <link rel="stylesheet" href="styles/about-styles/about-styles.css">
+    <link rel="stylesheet" href="styles/about-styles/about-me.css">
+    <link rel="stylesheet" href="styles/about-styles/my-skills.css">
+    <link rel="stylesheet" href="styles/projects-styles/projects-styles.css">
+    <link rel="stylesheet" href="styles/contact-styles/contact-styles.css">
+    <link rel="stylesheet" href="styles/contact-styles/waves.css">
+    <link rel="stylesheet" href="styles/contact-styles/form-styles.css">
+    <link rel="stylesheet" href="styles/footer/footer-styles.css">
+    <link rel="stylesheet" href="styles/themes/lightmode.css" id="theme">
     <script src="scripts/scroll.js" defer></script>
     <script src="scripts/slideshow.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
     <script src="scripts/cards.js" defer></script>
-    <script src="scripts/send-email.php" defer></script>
 </head>
 
 <body>
     <header class="visible">
-        <div class="header-content">
-            <div>
+        <div class="header-content-container">
+            <div id="brand">
                 <a href="">Noah Saenz</a>
             </div>
-            <div>
+            <div class="menu-container">
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                
+            </div>  
+            <div class="sun-moon-container">
+                <svg class="toggle" id="sun" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                </svg>
+                  <svg class="toggle" id="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
             </div>
-        </div>  
+        </div>
     </header>
 
-    <section class="homepage" id="home">
-        <div class="homepage-content">
+    <section class="homepage-section" id="home">
+        <div class="homepage-content-content">
             <div class="greeting">
                 <p>Hi, I'm</p>
                 <h1>Noah</h1> 
             </div>
             <div class="socials">
-                <span>Software Engineer 👨‍💻</span>
+                <span>Software Engineer</span><i id="emoji">👨‍💻</i>
                 <ul>
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/in/noah-saenz/"><i class="fab fa-linkedin-in icon"></i></a>
@@ -51,93 +68,84 @@
                         <a target="_blank" href="https://github.com/noahS16"><i class="fab fa-github icon"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href=""><i class="fas fa-envelope icon"></i></a>
+                        <a target="_blank" href="mailto:nmsaenz416@gmail.com"><i class="fas fa-envelope icon"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section class="about" id="about">  
-        <div id="about-content-area">
-            <div class="about-text">
+    <section class="about-section" id="about">  
+        <div class="about-content-container">
+            <div class="about-text-container">
                 <h2>About me</h2>
-                <span>Hello 👋. My name is Noah Saenz - welcome to my portfolio! I am a software developer with a Bachelor's Degree in Computer Science. Being a recent graduate, I am more than ready to use my skills to tackle challenges and make the world a nicer place to live. </span>
-                <a target="_blank" href="links/Noah_Saenz_Resume_2023.pdf" class="cta" id="resume-link">
+                <span>Hello 👋. My name is Noah Saenz - welcome to my portfolio! I am a software developer with a Bachelor's Degree in Computer Science, and I am always looking to expand my skillset. I am eager to contribute what I knnow and work with others to create an impact wherever I go. </span>
+                <a target="_blank" href="links/Noah_Saenz_Resume_2023.pdf" class="resume-link">
                     <span>Resume</span>
                     <svg width="13px" height="10px" viewBox="0 0 13 10">
                       <path d="M1,5 L11,5"></path>
                       <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
-                  </a>
+                </a>
             </div>
-            <div class="skills-area">
-                <h2>Some tools I use</h2>
-                <div id="skills-container">
-                    <ul id="skill-icons">
-                        <li><img src="icons/icons8-python.svg" alt=""><span>Python</span></li>
-                        <li><img src="icons/icons8-java.svg" alt=""><span>Java</span></li>
-                        <li><img src="icons/icons8-html.svg" alt=""><span>HTML</span></li>
-                        <li><img src="icons/icons8-css.svg" alt=""><span>CSS</span></li>
-                        <li><img src="icons/sql-svgrepo-com.svg" alt=""><span> SQL</span></li>
-                        <li><img src="icons/mongodb-icon.svg" alt=""><span>MongoDB</span></li>
-                        <li><img src="icons/icons8-git.svg" alt=""><span>Git</span></li>
-                        <li><img src="icons/icons8-javascript.svg" alt=""><span>JavaScript</span></li>
-                        <li><img src="icons/agile-svgrepo-com.svg" alt=""><span>Agile Dev.</span></li>
-                        <li><img src="icons/icons8-qt.svg" alt=""><span>Qt</span></li>
-                    </ul>
-                </div>
+            <div class="skills-content-container">
+                <h2 id="skills-header">Some tools I use</h2>
+                <ul class="skills-list">
+                    <li><img src="icons/icons8-python.svg" alt="Python icon"><span>Python</span></li>
+                    <li><img src="icons/icons8-java.svg" alt="Java icon"><span>Java</span></li>
+                    <li><img src="icons/icons8-html.svg" alt="HTML icon"><span>HTML</span></li>
+                    <li><img src="icons/icons8-css.svg" alt="CSS icon"><span>CSS</span></li>
+                    <li><img src="icons/sql-svgrepo-com.svg" alt="SQL icon"><span> SQL</span></li>
+                    <li><img src="icons/mongodb-icon.svg" alt="MongoDB icon"><span>MongoDB</span></li>
+                    <li><img src="icons/icons8-git.svg" alt="Git icon"><span>Git</span></li>
+                    <li><img src="icons/icons8-javascript.svg" alt="JS icon"><span>JavaScript</span></li>
+                    <li><svg id="agile" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <path d="M15.3171203,20 L20.5,20 C20.7761424,20 21,20.2238576 21,20.5 C21,20.7761424 20.7761424,21 20.5,21 L3.5,21 C3.22385763,21 3,20.7761424 3,20.5 C3,20.2238576 3.22385763,20 3.5,20 L11.9975864,20 L11.9992783,19.9999948 C13.3169414,19.9980929 14.5879191,19.4831487 15.5355339,18.5355339 C17.4881554,16.5829124 17.4881554,13.4170876 15.5355339,11.4644661 C15.1550557,11.0839879 14.7285139,10.7776478 14.2738601,10.5454458 C14.254923,10.5373678 14.2363578,10.5280549 14.2182818,10.5174987 C12.5524962,9.69291702 10.5227538,9.8537508 8.99894709,11 L10.5,11 C10.7761424,11 11,11.2238576 11,11.5 C11,11.7761424 10.7761424,12 10.5,12 L7.5,12 C7.22385763,12 7,11.7761424 7,11.5 L7,8.5 C7,8.22385763 7.22385763,8 7.5,8 C7.77614237,8 8,8.22385763 8,8.5 L8,10.5276441 C9.46401314,9.21593206 11.4173682,8.74894646 13.2298049,9.12668728 C13.0840962,8.75531167 13,8.36566448 13,8 C13,6.34314575 14.3431458,5 16,5 L16.2928932,5 L16.1464466,4.85355339 C15.9511845,4.65829124 15.9511845,4.34170876 16.1464466,4.14644661 C16.3417088,3.95118446 16.6582912,3.95118446 16.8535534,4.14644661 L17.8535534,5.14644661 C18.0488155,5.34170876 18.0488155,5.65829124 17.8535534,5.85355339 L16.8535534,6.85355339 C16.6582912,7.04881554 16.3417088,7.04881554 16.1464466,6.85355339 C15.9511845,6.65829124 15.9511845,6.34170876 16.1464466,6.14644661 L16.2928932,6 L16,6 C14.8954305,6 14,6.8954305 14,8 C14,8.56129192 14.3301293,9.27278631 14.7516956,9.66637738 C15.2886433,9.94356402 15.792506,10.3072247 16.2426407,10.7573593 C18.5857864,13.1005051 18.5857864,16.8994949 16.2426407,19.2426407 C15.9569017,19.5283797 15.6466243,19.7813454 15.3171203,20 L15.3171203,20 Z"/> </g></svg><span>Agile Dev.</span></li>
+                    <li><img src="icons/icons8-qt.svg" alt="Qt icon"><span>Qt</span></li>
+                </ul>
             </div>
         </div> 
     </section>
    
     <section class="projects-section" id="projects">
-        <h2 id="section-title">Projects</h2>
-        <div class="projects-content-area">
+        <div class="projects-content-container">
+            <h2 id="section-title">Projects</h2>
             <div class="carousel">
                 <div class="project-card" id="gmail-project">
                     <h2>Gmail Organizer</h2>
-                    <img src="images/gmail-project4.png" alt="Nature Image #1">
-                    <span>Delete, trash, and unsubscribe from sender specific emails in a single click.</span>
+                    <img src="images/gmail-project4.png" alt="Screenshot of my gmail project">
+                    <span>A fullstack desktop app. Delete, trash, or unsubscribe from user selected senders and emails in a single click.</span>
                     <div class="tech-stack">   
                         <ul class="tech-stack-list">
-                            <li><img src="icons/icons8-python.svg" alt=""></li>
-                            <li><img src="icons/mongodb-icon.svg" alt=""></li>
-                            <li><img src="icons/icons8-qt.svg" alt=""></li>
-                            <li><img src="icons/icons8-google-cloud.svg" alt=""></li>
+                            <li><img src="icons/icons8-python.svg" alt="Python icon"></li>
+                            <li><img src="icons/mongodb-icon.svg" alt="MongoDB icon"></li>
+                            <li><img src="icons/icons8-qt.svg" alt="Qt icon"></li>
+                            <li><img src="icons/icons8-google-cloud.svg" alt="Googlecloud icon"></li>
                         </ul>
                     </div>  
-                    
                 </div>
                 <div class="project-card" id="password-project">
                     <h2>Password Saver</h2>
-                    <img src="images/password-project2.png" alt="Nature Image #2">
-                    <span>View, save, edit, and generate custom passwords.</span>
+                    <img src="images/password-project2.png" alt="Screenshot of my password saver project">
+                    <span>A fullstack desktop app. View, save, edit, and generate custom passwords for websites.</span>
                     <div class="tech-stack">
-                        
                         <ul class="tech-stack-list">
-                            <li><img src="icons/icons8-python.svg" alt=""></li>
-                            <li><img src="icons/icons8-qt.svg" alt=""></li>
-                            <li><img src="icons/sql-svgrepo-com.svg" alt=""></li>
+                            <li><img src="icons/icons8-python.svg" alt="Python icon"></li>
+                            <li><img src="icons/icons8-qt.svg" alt="Qt icon"></li>
+                            <li><img src="icons/sql-svgrepo-com.svg" alt="SQL icon"></li>
                         </ul>
                     </div>
-                    
-                    
                 </div>
                 <div class="project-card" id="portfolio">
                     <h2>My portfolio</h2>
-                    <img src="images/website2.png" alt="Nature Image #2">
+                    <img src="images/website2.png" alt="Screenshot of my portfolio website">
                     <span>My portfolio (this website). Hand coded with HTML, CSS, and JS. </span>
                     <div class="tech-stack">
-                       
                         <ul class="tech-stack-list">
-                            <li><img src="icons/icons8-html.svg" alt=""></li>
-                            <li><img src="icons/icons8-css.svg" alt=""></li>
-                            <li><img src="icons/icons8-javascript.svg" alt=""></li>
+                            <li><img src="icons/icons8-html.svg" alt="HTML icon"></li>
+                            <li><img src="icons/icons8-css.svg" alt="CSS icon"></li>
+                            <li><img src="icons/icons8-javascript.svg" alt="JS icon"></li>
                         </ul>
                     </div>
-                    
-                    
                 </div>
             </div>  
             <div class="button-container">
@@ -146,34 +154,51 @@
             </div>         
         </div>
     </section>
-
-
-    <section class="contact" id="contact">
-        <div class="contact-section-content">
-            <div id="social-links-div"> 
-                <h2 id="headers">Contact Me</h2>     
-                <a target="_blank" href="https://www.linkedin.com/in/noah-saenz/"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg><span>LinkedIn</span></a>
-                <a target="_blank" href="https://github.com/noahS16"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="15.5" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg><span>GitHub</span></a>
-                <a href=""><svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#F0FFFF" fill-rule="nonzero"> </path> </g> </g></svg><span>Discord</span></a>
-                <a target="_blank" href="mailto:nmsaenz416@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg><span>nmsaenz416@gmail.com</span></a>
-            </div>
-            <div id="message-form-div">
-                <h2 id="headers">Message Me</h2>
-                <form>
+    
+    <section class="contact-section" id="contact">
+        <div class="waves-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                <use id="orange" xlink:href="#gentle-wave" x="48" y="0"/>
+                <use id="light-blue" xlink:href="#gentle-wave" x="48" y="3"/>
+                <use id="dark-blue" xlink:href="#gentle-wave" x="48" y="5"/>
+                <use id="op-yellow" xlink:href="#gentle-wave" x="48" y="7"/>
+                <use id="op-blue" xlink:href="#gentle-wave" x="48" y="7"/>
+              </g>
+            </svg>
+        </div>
+        <div class="contact-content-container">
+            <div class="message-form-container">
+                <h2 id="headers">Say Hi</h2>
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="75edcf88-a711-4d21-a77d-f63e354d61ae">
                     <label for="email"></label>
                     <input type="email" id="email" name="email" required placeholder="Your email *">
                     <label for="message"></label>
-                    <textarea id="message" name="message" rows="4" required placeholder="Your messagae *"></textarea>
-                    <button type="submit" id="submit-bttn"><svg fill="#001e57" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M509.532,34.999c-2.292-2.233-5.678-2.924-8.658-1.764L5.213,225.734c-2.946,1.144-4.967,3.883-5.192,7.034 c-0.225,3.151,1.386,6.149,4.138,7.7l102.719,57.875l35.651,174.259c0.222,1.232,0.723,2.379,1.442,3.364 c0.072,0.099,0.131,0.175,0.191,0.251c1.256,1.571,3.037,2.668,5.113,3c0.265,0.042,0.531,0.072,0.795,0.088 c0.171,0.011,0.341,0.016,0.511,0.016c1.559,0,3.036-0.445,4.295-1.228c0.426-0.264,0.831-0.569,1.207-0.915 c0.117-0.108,0.219-0.205,0.318-0.306l77.323-77.52c3.186-3.195,3.18-8.369-0.015-11.555c-3.198-3.188-8.368-3.18-11.555,0.015 l-60.739,60.894l13.124-112.394l185.495,101.814c1.868,1.02,3.944,1.239,5.846,0.78c0.209-0.051,0.4-0.105,0.589-0.166 c1.878-0.609,3.526-1.877,4.574-3.697c0.053-0.094,0.1-0.179,0.146-0.264c0.212-0.404,0.382-0.8,0.517-1.202L511.521,43.608 C512.6,40.596,511.824,37.23,509.532,34.999z M27.232,234.712L432.364,77.371l-318.521,206.14L27.232,234.712z M162.72,316.936 c-0.764,0.613-1.429,1.374-1.949,2.267c-0.068,0.117-0.132,0.235-0.194,0.354c-0.496,0.959-0.784,1.972-0.879,2.986L148.365,419.6 l-25.107-122.718l275.105-178.042L162.72,316.936z M359.507,419.195l-177.284-97.307L485.928,66.574L359.507,419.195z"/> </g> </g> </g></svg>Send</button>
+                    <textarea id="message" name="message" rows="4" required placeholder="Your message *"></textarea>
+                    <button type="submit" id="submit-bttn">Send</button>
                 </form>
             </div>
-        </div>
+             <div id="container" class="army-bomb-container">
+                <div id="handle" class="handle"></div>
+                <div id="army-bomb" class="army-bomb"></div>
+            </div>
+        </div>  
     </section>
-
-    <!-- <footer>
-        <span>Noah Saenz all rights reserved 2024</span>
-    </footer> -->
-
+    
+    <footer>
+        <hr>
+        <div class="social-links-container"> 
+                <ul class="contact-list">
+                    <li><a target="_blank" href="https://www.linkedin.com/in/noah-saenz/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg></a></li>
+                    <li><a target="_blank" href="https://github.com/noahS16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></li>
+                    <li><a target="_blank" href="mailto:nmsaenz416@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a></li>
+                </ul>       
+            </div>
+        <span>Designed and Developed by Noah Saenz &copy; 2024</span>
+    </footer>
 </body>
-
 </html>

@@ -1,0 +1,162 @@
+.homepage-section{
+  height: 100vh;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.homepage-content-container{
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  margin-left: 15px;
+  font-size: 13vw;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-right: 15px;
+  animation: 1.75s ease-in-out present;
+}
+
+@keyframes present{
+  from{
+    opacity: 0;
+    /* transition: opacity 3s ease; */
+  }
+  0%{
+    transform: translateY(-140px);
+    /* transform: translateX(140px); */
+  }
+  20%{
+    opacity: 0.05%;
+
+  }
+  50%{
+    opacity: 0.5%;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.greeting {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: baseline;
+  text-align: center;
+  justify-content: center;
+}
+
+.greeting p{
+  font-size: 4vw;
+  font-weight: 200;
+}
+
+.socials {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.socials span{
+  font-weight: 200;
+  font-size: 3vw;
+  text-align: center;
+  letter-spacing: 2px;
+  align-items: center;
+  display: inline-flex;
+}
+
+#emoji{
+  font-size: 3vw;
+  padding: 0 0 0 .25em;
+}
+
+.socials ul{
+  display: flex;
+  justify-content: center;
+  margin-top: 4vw;
+  column-gap: 1.5em;
+ 
+}
+
+.socials ul li a{
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 60px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;z-index: 1;
+}
+
+.socials ul li a .icon{
+  position: relative;
+  transition: 1s;
+  z-index: 3;
+}
+
+.socials ul li a:hover .icon {
+  transform: rotateX(360deg);
+}
+
+.socials ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+
+}
+
+.socials ul li a:hover:before {
+  top: 0;
+}
+
+/* .socials ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+.socials ul li:nth-child(2) a:before{
+  background: #03060A;
+}
+
+.socials ul li:nth-child(3) a:before {
+  background: #0077b5;
+} */
+
+@media (max-width: 800px) {
+  #brand{
+    display: none;
+  }
+  h1{
+    font-size: 19vw;
+  }
+  .greeting p, #emoji{
+    font-size: 6vw;
+  }
+  .socials span{
+    font-size: 6vw;
+  }
+  
+  .socials ul{
+    column-gap: 0;
+  }
+}
+
+/*# sourceMappingURL=landing-styles.css.map */

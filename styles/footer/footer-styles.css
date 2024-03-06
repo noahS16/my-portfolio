@@ -1,0 +1,36 @@
+.contact-list{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  .contact-list li{
+    /* display: grid; */
+  }
+  
+  .social-links-container{
+    /* justify-content: center;
+    text-align: center;
+    align-items: center;
+    place-content: center; */
+    /* background-color: #F5ECFF; */
+    padding: 1em 0 1em 0;
+  }
+  .social-links-container svg{
+      width: 1.5em;
+      height: 1.5em;
+      /* padding-right: .5em; */
+
+  }
+
+  .social-links-container a{
+      display: flex;
+      text-decoration: none;
+      line-height: 4em;
+      align-items: center;
+  }
+
+@media (max-width: 760px) {
+    footer{
+        font-size: 12px;
+    }
+}

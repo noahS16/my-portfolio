@@ -1,0 +1,133 @@
+body{
+    color: #231D2A
+}
+h2{
+    color: #231D2A;
+    font-size: 40px;
+    font-weight: 400;
+}
+hr{
+    color: #7f7888;
+}
+.homepage-section{
+    background: linear-gradient(40deg, #FACEB5 3%, #F3AAC6 28%, #CAB8DA 68%, #9FC8ED 95%);
+    color: #EFF3FC;
+}
+  
+.socials ul li:nth-child(1) a:before{
+    background: #3b5999;
+}
+  
+.socials ul li:nth-child(2) a:before{
+    background: #03060A;
+}
+  
+.socials ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+/*********************************************/
+.about-section {
+    background-color: #F5ECFF;
+}
+
+.about-text-container {
+    /* background-color: #F5ECFF; */
+}
+
+
+
+.resume-link:before {
+    background: rgba(255, 192, 203, 0.5);
+}
+
+.resume-link svg {
+    stroke: #111;
+}
+
+.resume-link:hover:before {
+    background: pink;
+}
+
+.skills-content-container{
+    /* background-color: #F5ECFF; */
+}
+
+/***********************************************/
+.projects-section{
+    background-color: #F5ECFF;
+  }
+
+.projects-content-container{
+    background-color: #d9c2f3;
+}
+  
+.project-card{
+    background-color: #F5ECFF;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+
+.nav-buttons{
+    background-color: #F5ECFF;
+    box-shadow: 1px 2px 4px rgba(37, 37, 37, 0.5); /* Adjust the values as needed */
+}
+
+/*****************************************************/
+svg #orange{
+    fill: rgb(236, 159, 52);
+}
+svg #light-blue{
+    fill: rgb(51, 187, 238);
+}
+svg #dark-blue{
+    fill: rgba(52,124,190);
+}
+svg #op-yellow{
+    fill: rgba(249, 217, 21, 0.5);
+}
+svg #op-blue{
+    fill: rgba(52,124,190,0.5);
+}
+
+.contact-section{
+    background-color: #F5ECFF;
+}
+
+textarea:focus{
+    outline: 2px solid #231D2A;
+}
+input:focus{
+    outline: 2px solid #231D2A;
+}
+textarea:hover{
+    border: 1px solid #231D2A;
+}
+input:hover{
+    border: 1px solid #231D2A;
+}
+
+#submit-bttn{
+    background-color: transparent;
+    border: 2px solid #A67CE4;
+}
+
+#submit-bttn:hover{
+    background-color: #bda3e3 ;
+    color: #fff;
+}
+
+footer{
+    background-color: #F5ECFF;
+    color:#5b5560
+}
+
+.social-links-container svg{
+    fill: #766c7e;
+}
+
+.social-links-container a svg:hover{
+    fill: #9461c1;
+}
+
+  
