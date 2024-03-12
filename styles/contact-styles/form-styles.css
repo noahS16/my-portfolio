@@ -36,9 +36,9 @@ textArea{
 
 #submit-bttn{
     margin-top: 1em;
-    width: 7em;
-    height: 3em;
-    border-radius: 20px;
+    width: 5em;
+    height: 2.5em;
+    border-radius: 10px;
     cursor: pointer;
     /* transition: background-color .5s ease-out;
     transition: color .5s ease-in; */

@@ -77,7 +77,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  column-gap: 1em;
+  column-gap: .5em;
 }
 
 .nav-buttons{
@@ -86,6 +86,11 @@
   height: 1vw;
   border-radius: 50%;
   border: none;
+  transition: transform .35s;
+}
+
+.nav-buttons:hover{
+  transform: translateY(-4px);
 }
 
 @media (max-width: 760px){

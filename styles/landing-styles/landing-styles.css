@@ -189,6 +189,9 @@ h1 {
     width: 6vw;
     height: 6vw;
   }
+  .down-arrow-container{
+    bottom: 50px;
+  }
 }
 
 /*# sourceMappingURL=landing-styles.css.map */
