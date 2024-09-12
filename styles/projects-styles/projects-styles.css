@@ -5,7 +5,7 @@
 }
 
 #section-title{
-  text-align: center;
+  text-align: left;
   margin-bottom: .5em;
 }
 
@@ -94,6 +94,9 @@
 }
 
 @media (max-width: 760px){
+  #section-title{
+    text-align: center;
+  }
   .projects-section{
     padding-bottom: 0;
   }
